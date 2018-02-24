@@ -26,11 +26,12 @@ namespace FYP
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["mydb"].ConnectionString);
-        SqlCommand cmd;
+
         int rs; // rs yha lia ha
         private void button1_Click(object sender, EventArgs e)
         {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["mydb"].ConnectionString);
+            SqlCommand cmd;
             sessiongroupBox1.Visible = false;
             newsemestergroupBox1.Visible = true;
 
@@ -59,7 +60,7 @@ namespace FYP
                 cmd.ExecuteNonQuery();
                 conn.Close();
 
-               
+
             }
         }
 
@@ -143,16 +144,19 @@ namespace FYP
         int r;
         private void insertbutton2_Click(object sender, EventArgs e)
         {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["mydb"].ConnectionString);
+            SqlCommand cmd;
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
 
-                
-                SqlCommand cm = new SqlCommand(@"INSERT INTO " + toplabel6.Text.Trim() + "([RollNo],[RegNo],[Name],[FatherName])VALUES('" + dataGridView1.Rows[i].Cells[0].Value + "','" + dataGridView1.Rows[i].Cells[1].Value + "','"+ dataGridView1.Rows[i].Cells[2].Value + "','" + dataGridView1.Rows[i].Cells[3].Value + "')", conn);
+
+                SqlCommand cm = new SqlCommand(@"INSERT INTO " + toplabel6.Text.Trim() + "([RollNo],[RegNo],[Name],[FatherName])VALUES('" + dataGridView1.Rows[i].Cells[0].Value + "','" + dataGridView1.Rows[i].Cells[1].Value + "','" + dataGridView1.Rows[i].Cells[2].Value + "','" + dataGridView1.Rows[i].Cells[3].Value + "')", conn);
                 conn.Open();
                 r = cm.ExecuteNonQuery();
                 conn.Close();
-                MessageBox.Show("insert data successfully");
+
             }
+            MessageBox.Show("insert data successfully");
         }
     }
 }
