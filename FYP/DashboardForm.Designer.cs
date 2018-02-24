@@ -37,6 +37,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.userControl22 = new FYP.UserControl2();
             this.userControl21 = new FYP.UserControl2();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -147,18 +148,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
+            // userControl22
+            // 
+            this.userControl22.Location = new System.Drawing.Point(338, 96);
+            this.userControl22.Name = "userControl22";
+            this.userControl22.Size = new System.Drawing.Size(639, 417);
+            this.userControl22.TabIndex = 7;
+            // 
             // userControl21
             // 
             this.userControl21.Location = new System.Drawing.Point(211, 64);
             this.userControl21.Name = "userControl21";
             this.userControl21.Size = new System.Drawing.Size(755, 417);
             this.userControl21.TabIndex = 4;
+            this.userControl21.Load += new System.EventHandler(this.userControl21_Load);
             // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1101, 508);
+            this.Controls.Add(this.userControl22);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.userControl21);
             this.Controls.Add(this.button4);
@@ -187,5 +197,6 @@
         private UserControl1 userControl11;
         private System.Windows.Forms.Button button1;
         private UserControl2 userControl21;
+        private UserControl2 userControl22;
     }
 }

@@ -43,21 +43,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.sessiongroupBox1 = new System.Windows.Forms.GroupBox();
+            this.sessionmaskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.fallradioButton2 = new System.Windows.Forms.RadioButton();
             this.springradioButton1 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.sessionmaskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.subjectcomboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.subjectcomboBox2 = new System.Windows.Forms.ComboBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.newsemestergroupBox1.SuspendLayout();
             this.sessiongroupBox1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -208,6 +208,14 @@
             this.sessiongroupBox1.TabStop = false;
             this.sessiongroupBox1.Text = "groupBox1";
             // 
+            // sessionmaskedTextBox1
+            // 
+            this.sessionmaskedTextBox1.Location = new System.Drawing.Point(79, 38);
+            this.sessionmaskedTextBox1.Mask = "Bscs00_00";
+            this.sessionmaskedTextBox1.Name = "sessionmaskedTextBox1";
+            this.sessionmaskedTextBox1.Size = new System.Drawing.Size(65, 20);
+            this.sessionmaskedTextBox1.TabIndex = 6;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(81, 192);
@@ -249,14 +257,6 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Session";
             // 
-            // sessionmaskedTextBox1
-            // 
-            this.sessionmaskedTextBox1.Location = new System.Drawing.Point(79, 38);
-            this.sessionmaskedTextBox1.Mask = "Bscs00_00";
-            this.sessionmaskedTextBox1.Name = "sessionmaskedTextBox1";
-            this.sessionmaskedTextBox1.Size = new System.Drawing.Size(65, 20);
-            this.sessionmaskedTextBox1.TabIndex = 6;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.subjectcomboBox2);
@@ -268,7 +268,7 @@
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Location = new System.Drawing.Point(270, 88);
+            this.groupBox1.Location = new System.Drawing.Point(267, 88);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(317, 296);
             this.groupBox1.TabIndex = 3;
@@ -276,62 +276,14 @@
             this.groupBox1.Text = "groupBox1";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // maskedTextBox1
+            // subjectcomboBox2
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(79, 38);
-            this.maskedTextBox1.Mask = "Bscs00_00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(65, 20);
-            this.maskedTextBox1.TabIndex = 6;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(81, 192);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Next";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(141, 121);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(41, 17);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Fall";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(57, 120);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(55, 17);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Spring";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 39);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 13);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Session";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 73);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Semester";
+            this.subjectcomboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.subjectcomboBox2.FormattingEnabled = true;
+            this.subjectcomboBox2.Location = new System.Drawing.Point(81, 144);
+            this.subjectcomboBox2.Name = "subjectcomboBox2";
+            this.subjectcomboBox2.Size = new System.Drawing.Size(121, 21);
+            this.subjectcomboBox2.TabIndex = 7;
             // 
             // comboBox1
             // 
@@ -353,6 +305,35 @@
             this.comboBox1.TabIndex = 7;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(79, 38);
+            this.maskedTextBox1.Mask = "Bscs00_00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(65, 20);
+            this.maskedTextBox1.TabIndex = 6;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(81, 192);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Next";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(141, 121);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(41, 17);
+            this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Fall";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -362,14 +343,34 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "Subject";
             // 
-            // subjectcomboBox2
+            // radioButton2
             // 
-            this.subjectcomboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.subjectcomboBox2.FormattingEnabled = true;
-            this.subjectcomboBox2.Location = new System.Drawing.Point(81, 144);
-            this.subjectcomboBox2.Name = "subjectcomboBox2";
-            this.subjectcomboBox2.Size = new System.Drawing.Size(121, 21);
-            this.subjectcomboBox2.TabIndex = 7;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(57, 120);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(55, 17);
+            this.radioButton2.TabIndex = 3;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Spring";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 73);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Semester";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 39);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Session";
             // 
             // UserControl2
             // 

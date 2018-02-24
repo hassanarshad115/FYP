@@ -18,14 +18,14 @@ namespace FYP
 
             sedepanel3.Height = mcsbutton1.Height;
             sedepanel3.Top = mcsbutton1.Top;
-            userControl11.BringToFront();
+            userControl22.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             sedepanel3.Height = mcsbutton1.Height;
             sedepanel3.Top = mcsbutton1.Top;
-            userControl11.BringToFront();
+            userControl22.BringToFront();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -51,6 +51,11 @@ namespace FYP
         }
 
         private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userControl21_Load(object sender, EventArgs e)
         {
 
         }
