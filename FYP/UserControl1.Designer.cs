@@ -29,16 +29,12 @@
         private void InitializeComponent()
         {
             this.newsemestergroupBox1 = new System.Windows.Forms.GroupBox();
+            this.insertbutton2 = new System.Windows.Forms.Button();
+            this.sheetcomboBox1 = new System.Windows.Forms.ComboBox();
+            this.chosefilebutton2 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.toplabel6 = new System.Windows.Forms.Label();
             this.savebutton1 = new System.Windows.Forms.Button();
-            this.fathernametextBox4 = new System.Windows.Forms.TextBox();
-            this.nametextBox3 = new System.Windows.Forms.TextBox();
-            this.regnotextBox2 = new System.Windows.Forms.TextBox();
-            this.rollnotextBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.sessiongroupBox1 = new System.Windows.Forms.GroupBox();
             this.sessionmaskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -49,27 +45,68 @@
             this.resultbutton2 = new System.Windows.Forms.Button();
             this.newsemsterbutton1 = new System.Windows.Forms.Button();
             this.newsemestergroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.sessiongroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // newsemestergroupBox1
             // 
+            this.newsemestergroupBox1.Controls.Add(this.insertbutton2);
+            this.newsemestergroupBox1.Controls.Add(this.sheetcomboBox1);
+            this.newsemestergroupBox1.Controls.Add(this.chosefilebutton2);
+            this.newsemestergroupBox1.Controls.Add(this.dataGridView1);
             this.newsemestergroupBox1.Controls.Add(this.toplabel6);
             this.newsemestergroupBox1.Controls.Add(this.savebutton1);
-            this.newsemestergroupBox1.Controls.Add(this.fathernametextBox4);
-            this.newsemestergroupBox1.Controls.Add(this.nametextBox3);
-            this.newsemestergroupBox1.Controls.Add(this.regnotextBox2);
-            this.newsemestergroupBox1.Controls.Add(this.rollnotextBox1);
-            this.newsemestergroupBox1.Controls.Add(this.label4);
-            this.newsemestergroupBox1.Controls.Add(this.label3);
-            this.newsemestergroupBox1.Controls.Add(this.label2);
-            this.newsemestergroupBox1.Controls.Add(this.label1);
             this.newsemestergroupBox1.Location = new System.Drawing.Point(346, 26);
             this.newsemestergroupBox1.Name = "newsemestergroupBox1";
             this.newsemestergroupBox1.Size = new System.Drawing.Size(458, 370);
             this.newsemestergroupBox1.TabIndex = 2;
             this.newsemestergroupBox1.TabStop = false;
             this.newsemestergroupBox1.Text = "groupBox1";
+            // 
+            // insertbutton2
+            // 
+            this.insertbutton2.Location = new System.Drawing.Point(3, 261);
+            this.insertbutton2.Name = "insertbutton2";
+            this.insertbutton2.Size = new System.Drawing.Size(75, 23);
+            this.insertbutton2.TabIndex = 9;
+            this.insertbutton2.Text = "button2";
+            this.insertbutton2.UseVisualStyleBackColor = true;
+            this.insertbutton2.Click += new System.EventHandler(this.insertbutton2_Click);
+            // 
+            // sheetcomboBox1
+            // 
+            this.sheetcomboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sheetcomboBox1.FormattingEnabled = true;
+            this.sheetcomboBox1.Location = new System.Drawing.Point(13, 113);
+            this.sheetcomboBox1.Name = "sheetcomboBox1";
+            this.sheetcomboBox1.Size = new System.Drawing.Size(66, 21);
+            this.sheetcomboBox1.TabIndex = 7;
+            this.sheetcomboBox1.SelectedIndexChanged += new System.EventHandler(this.sheetcomboBox1_SelectedIndexChanged);
+            // 
+            // chosefilebutton2
+            // 
+            this.chosefilebutton2.Location = new System.Drawing.Point(13, 63);
+            this.chosefilebutton2.Name = "chosefilebutton2";
+            this.chosefilebutton2.Size = new System.Drawing.Size(75, 23);
+            this.chosefilebutton2.TabIndex = 7;
+            this.chosefilebutton2.Text = "Chose file";
+            this.chosefilebutton2.UseVisualStyleBackColor = true;
+            this.chosefilebutton2.Click += new System.EventHandler(this.chosefilebutton2_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(135, 48);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(317, 150);
+            this.dataGridView1.TabIndex = 8;
             // 
             // toplabel6
             // 
@@ -90,70 +127,6 @@
             this.savebutton1.UseVisualStyleBackColor = true;
             this.savebutton1.Click += new System.EventHandler(this.savebutton1_Click);
             // 
-            // fathernametextBox4
-            // 
-            this.fathernametextBox4.Location = new System.Drawing.Point(197, 143);
-            this.fathernametextBox4.Name = "fathernametextBox4";
-            this.fathernametextBox4.Size = new System.Drawing.Size(155, 20);
-            this.fathernametextBox4.TabIndex = 1;
-            // 
-            // nametextBox3
-            // 
-            this.nametextBox3.Location = new System.Drawing.Point(197, 110);
-            this.nametextBox3.Name = "nametextBox3";
-            this.nametextBox3.Size = new System.Drawing.Size(155, 20);
-            this.nametextBox3.TabIndex = 1;
-            // 
-            // regnotextBox2
-            // 
-            this.regnotextBox2.Location = new System.Drawing.Point(197, 73);
-            this.regnotextBox2.Name = "regnotextBox2";
-            this.regnotextBox2.Size = new System.Drawing.Size(155, 20);
-            this.regnotextBox2.TabIndex = 1;
-            // 
-            // rollnotextBox1
-            // 
-            this.rollnotextBox1.Location = new System.Drawing.Point(197, 41);
-            this.rollnotextBox1.Name = "rollnotextBox1";
-            this.rollnotextBox1.Size = new System.Drawing.Size(155, 20);
-            this.rollnotextBox1.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 150);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Father Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Regd.No";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Roll No";
-            // 
             // sessiongroupBox1
             // 
             this.sessiongroupBox1.Controls.Add(this.sessionmaskedTextBox1);
@@ -161,9 +134,9 @@
             this.sessiongroupBox1.Controls.Add(this.fallradioButton2);
             this.sessiongroupBox1.Controls.Add(this.springradioButton1);
             this.sessiongroupBox1.Controls.Add(this.label5);
-            this.sessiongroupBox1.Location = new System.Drawing.Point(234, 91);
+            this.sessiongroupBox1.Location = new System.Drawing.Point(15, 157);
             this.sessiongroupBox1.Name = "sessiongroupBox1";
-            this.sessiongroupBox1.Size = new System.Drawing.Size(243, 241);
+            this.sessiongroupBox1.Size = new System.Drawing.Size(313, 355);
             this.sessiongroupBox1.TabIndex = 3;
             this.sessiongroupBox1.TabStop = false;
             this.sessiongroupBox1.Text = "groupBox1";
@@ -259,6 +232,7 @@
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.newsemestergroupBox1.ResumeLayout(false);
             this.newsemestergroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.sessiongroupBox1.ResumeLayout(false);
             this.sessiongroupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -270,14 +244,6 @@
         private System.Windows.Forms.GroupBox newsemestergroupBox1;
         private System.Windows.Forms.Label toplabel6;
         private System.Windows.Forms.Button savebutton1;
-        private System.Windows.Forms.TextBox fathernametextBox4;
-        private System.Windows.Forms.TextBox nametextBox3;
-        private System.Windows.Forms.TextBox regnotextBox2;
-        private System.Windows.Forms.TextBox rollnotextBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox sessiongroupBox1;
         private System.Windows.Forms.MaskedTextBox sessionmaskedTextBox1;
         private System.Windows.Forms.Button button1;
@@ -287,5 +253,10 @@
         private System.Windows.Forms.Button attendencebutton3;
         private System.Windows.Forms.Button resultbutton2;
         private System.Windows.Forms.Button newsemsterbutton1;
+        private System.Windows.Forms.Button chosefilebutton2;
+        private System.Windows.Forms.ComboBox sheetcomboBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button insertbutton2;
     }
 }
