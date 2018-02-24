@@ -44,14 +44,15 @@ namespace FYP
             System.Diagnostics.Process.Start("https://www.facebook.com/groups/iub.mcs.bwn/");
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
+      
         private void button1_Click_2(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

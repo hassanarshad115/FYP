@@ -41,7 +41,7 @@ namespace FYP
                 cmd = new SqlCommand(q, conn);
                 conn.Open();
                 cmd.ExecuteNonQuery();
-
+                conn.Close();
                 toplabel6.Text = sessionmaskedTextBox1.Text + "S";//yha concatinate kia h session ko 
                 MessageBox.Show("successfully create table");
 
@@ -49,7 +49,7 @@ namespace FYP
             }
             if (fallradioButton2.Checked == true)
             {
-               
+
                 string q = "CREATE TABLE [dbo]." + sessionmaskedTextBox1.Text.Trim() + "F" + "([RollNo] INT NOT NULL,[RegNo] NVARCHAR(50) NULL ,[Name] NVARCHAR(50) NULL ,[FatherName] NVARCHAR(50) NULL )";
                 cmd = new SqlCommand(q, conn);
 
@@ -57,15 +57,15 @@ namespace FYP
                 //string a = sessionmaskedTextBox1.Text + "F";
                 //insertValueMethod(a);
                 cmd.ExecuteNonQuery();
+                conn.Close();
 
-
-                //toplabel6.Text = sessionmaskedTextBox1.Text + "F";//yha concatinate kia h session ko 
+               
             }
         }
 
-       
 
-        
+
+
 
         private void newsemsterbutton1_Click(object sender, EventArgs e)
         {
@@ -83,7 +83,6 @@ namespace FYP
             string connection = ConfigurationManager.ConnectionStrings["mydb"].ConnectionString;
             SqlConnection conn = new SqlConnection(connection);
 
-            //string q = "INSERT INTO [dbo]."+toplabel6.Text+"([RollNo],[RegNo],[Name],[FatherName]) VALUES( "+ rollnotextBox1.Text +  " ," + regnotextBox2.Text + "," + nametextBox3.Text + "," + fathernametextBox4.Text+ ")";
             string q = "INSERT INTO [dbo]." + toplabel6.Text + "([RollNo],[RegNo],[Name],[FatherName]) VALUES( @r,@ad,@n,@f)";
             SqlCommand cmd1 = new SqlCommand(q, conn);
             //cmd1.Parameters.AddWithValue("@r", rollnotextBox1.Text);
@@ -92,7 +91,6 @@ namespace FYP
             //cmd1.Parameters.AddWithValue("@f", fathernametextBox4.Text);
             conn.Open();
             cmd1.ExecuteNonQuery();
-            //cmd1.ExecuteNonQuery();
 
             MessageBox.Show("Table Data Enter Successfully");
             txtBoxClearMethod();
@@ -139,19 +137,20 @@ namespace FYP
             }
             dataGridView1.Refresh();
         }
-        int marks;
-        double gpa;
+        //int marks;
+        //double gpa;
         string a;
-
+        int r;
         private void insertbutton2_Click(object sender, EventArgs e)
         {
-            for (int i = 1; i < dataGridView1.Rows.Count; i++)
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
-                //conn.Open();
-                cmd = new SqlCommand(@"INSERT INTO " + toplabel6.Text.Trim() + "([RollNo],[RegNo],[Name],[FatherName])VALUES('" + dataGridView1.Rows[i].Cells[0].Value + "','" + dataGridView1.Rows[i].Cells[1].Value + dataGridView1.Rows[i].Cells[2].Value + "','" + dataGridView1.Rows[i].Cells[3].Value + "')", conn);
 
-                rs = cmd.ExecuteNonQuery();
-                conn.Close(); 
+                
+                SqlCommand cm = new SqlCommand(@"INSERT INTO " + toplabel6.Text.Trim() + "([RollNo],[RegNo],[Name],[FatherName])VALUES('" + dataGridView1.Rows[i].Cells[0].Value + "','" + dataGridView1.Rows[i].Cells[1].Value + "','"+ dataGridView1.Rows[i].Cells[2].Value + "','" + dataGridView1.Rows[i].Cells[3].Value + "')", conn);
+                conn.Open();
+                r = cm.ExecuteNonQuery();
+                conn.Close();
                 MessageBox.Show("insert data successfully");
             }
         }
