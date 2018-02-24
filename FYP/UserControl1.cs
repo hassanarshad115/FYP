@@ -151,7 +151,7 @@ namespace FYP
                 cmd = new SqlCommand(@"INSERT INTO " + toplabel6.Text.Trim() + "([RollNo],[RegNo],[Name],[FatherName])VALUES('" + dataGridView1.Rows[i].Cells[0].Value + "','" + dataGridView1.Rows[i].Cells[1].Value + dataGridView1.Rows[i].Cells[2].Value + "','" + dataGridView1.Rows[i].Cells[3].Value + "')", conn);
 
                 rs = cmd.ExecuteNonQuery();
-                conn.Close();
+                conn.Close(); 
                 MessageBox.Show("insert data successfully");
             }
         }
