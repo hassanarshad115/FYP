@@ -30,113 +30,134 @@
         {
             this.newsemestergroupBox1 = new System.Windows.Forms.GroupBox();
             this.insertbutton2 = new System.Windows.Forms.Button();
-            this.sheetcomboBox1 = new System.Windows.Forms.ComboBox();
-            this.chosefilebutton2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.newsemestersheetcomboBox1 = new System.Windows.Forms.ComboBox();
+            this.newsemesterchosefilebutton2 = new System.Windows.Forms.Button();
+            this.newsemesterdataGridView1 = new System.Windows.Forms.DataGridView();
+            this.toplabellabel7 = new System.Windows.Forms.Label();
             this.toplabel6 = new System.Windows.Forms.Label();
-            this.savebutton1 = new System.Windows.Forms.Button();
             this.sessiongroupBox1 = new System.Windows.Forms.GroupBox();
             this.sessionmaskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.fallradioButton2 = new System.Windows.Forms.RadioButton();
+            this.session1comboBox1 = new System.Windows.Forms.ComboBox();
             this.springradioButton1 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.attendencebutton3 = new System.Windows.Forms.Button();
             this.resultbutton2 = new System.Windows.Forms.Button();
             this.newsemsterbutton1 = new System.Windows.Forms.Button();
+            this.resultgroupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.resultmaskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.yoursemestercomboBox2 = new System.Windows.Forms.ComboBox();
+            this.InresultsemestercomboBox1 = new System.Windows.Forms.ComboBox();
+            this.resultfallradioButton1 = new System.Windows.Forms.RadioButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.resultspringradioButton2 = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.afteResultgroupBox1 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.afterResultcomboBox = new System.Windows.Forms.ComboBox();
+            this.afterResultChoseFilebutton = new System.Windows.Forms.Button();
+            this.afterResultdataGridView2 = new System.Windows.Forms.DataGridView();
+            this.topAfterResultlabel2 = new System.Windows.Forms.Label();
+            this.topAfterResultlabel1 = new System.Windows.Forms.Label();
             this.newsemestergroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newsemesterdataGridView1)).BeginInit();
             this.sessiongroupBox1.SuspendLayout();
+            this.resultgroupBox1.SuspendLayout();
+            this.afteResultgroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.afterResultdataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // newsemestergroupBox1
             // 
             this.newsemestergroupBox1.Controls.Add(this.insertbutton2);
-            this.newsemestergroupBox1.Controls.Add(this.sheetcomboBox1);
-            this.newsemestergroupBox1.Controls.Add(this.chosefilebutton2);
-            this.newsemestergroupBox1.Controls.Add(this.dataGridView1);
+            this.newsemestergroupBox1.Controls.Add(this.newsemestersheetcomboBox1);
+            this.newsemestergroupBox1.Controls.Add(this.newsemesterchosefilebutton2);
+            this.newsemestergroupBox1.Controls.Add(this.newsemesterdataGridView1);
+            this.newsemestergroupBox1.Controls.Add(this.toplabellabel7);
             this.newsemestergroupBox1.Controls.Add(this.toplabel6);
-            this.newsemestergroupBox1.Controls.Add(this.savebutton1);
-            this.newsemestergroupBox1.Location = new System.Drawing.Point(346, 26);
+            this.newsemestergroupBox1.Location = new System.Drawing.Point(455, 3);
             this.newsemestergroupBox1.Name = "newsemestergroupBox1";
-            this.newsemestergroupBox1.Size = new System.Drawing.Size(458, 370);
+            this.newsemestergroupBox1.Size = new System.Drawing.Size(426, 209);
             this.newsemestergroupBox1.TabIndex = 2;
             this.newsemestergroupBox1.TabStop = false;
             this.newsemestergroupBox1.Text = "groupBox1";
             // 
             // insertbutton2
             // 
-            this.insertbutton2.Location = new System.Drawing.Point(3, 261);
+            this.insertbutton2.Location = new System.Drawing.Point(13, 150);
             this.insertbutton2.Name = "insertbutton2";
-            this.insertbutton2.Size = new System.Drawing.Size(75, 23);
+            this.insertbutton2.Size = new System.Drawing.Size(68, 23);
             this.insertbutton2.TabIndex = 9;
-            this.insertbutton2.Text = "button2";
+            this.insertbutton2.Text = "&Save";
             this.insertbutton2.UseVisualStyleBackColor = true;
             this.insertbutton2.Click += new System.EventHandler(this.insertbutton2_Click);
             // 
-            // sheetcomboBox1
+            // newsemestersheetcomboBox1
             // 
-            this.sheetcomboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sheetcomboBox1.FormattingEnabled = true;
-            this.sheetcomboBox1.Location = new System.Drawing.Point(13, 113);
-            this.sheetcomboBox1.Name = "sheetcomboBox1";
-            this.sheetcomboBox1.Size = new System.Drawing.Size(66, 21);
-            this.sheetcomboBox1.TabIndex = 7;
-            this.sheetcomboBox1.SelectedIndexChanged += new System.EventHandler(this.sheetcomboBox1_SelectedIndexChanged);
+            this.newsemestersheetcomboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.newsemestersheetcomboBox1.FormattingEnabled = true;
+            this.newsemestersheetcomboBox1.Location = new System.Drawing.Point(13, 113);
+            this.newsemestersheetcomboBox1.Name = "newsemestersheetcomboBox1";
+            this.newsemestersheetcomboBox1.Size = new System.Drawing.Size(66, 21);
+            this.newsemestersheetcomboBox1.TabIndex = 7;
+            this.newsemestersheetcomboBox1.SelectedIndexChanged += new System.EventHandler(this.sheetcomboBox1_SelectedIndexChanged);
             // 
-            // chosefilebutton2
+            // newsemesterchosefilebutton2
             // 
-            this.chosefilebutton2.Location = new System.Drawing.Point(13, 63);
-            this.chosefilebutton2.Name = "chosefilebutton2";
-            this.chosefilebutton2.Size = new System.Drawing.Size(75, 23);
-            this.chosefilebutton2.TabIndex = 7;
-            this.chosefilebutton2.Text = "Chose file";
-            this.chosefilebutton2.UseVisualStyleBackColor = true;
-            this.chosefilebutton2.Click += new System.EventHandler(this.chosefilebutton2_Click);
+            this.newsemesterchosefilebutton2.Location = new System.Drawing.Point(13, 63);
+            this.newsemesterchosefilebutton2.Name = "newsemesterchosefilebutton2";
+            this.newsemesterchosefilebutton2.Size = new System.Drawing.Size(75, 23);
+            this.newsemesterchosefilebutton2.TabIndex = 7;
+            this.newsemesterchosefilebutton2.Text = "Chose file";
+            this.newsemesterchosefilebutton2.UseVisualStyleBackColor = true;
+            this.newsemesterchosefilebutton2.Click += new System.EventHandler(this.chosefilebutton2_Click);
             // 
-            // dataGridView1
+            // newsemesterdataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(135, 48);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(317, 150);
-            this.dataGridView1.TabIndex = 8;
+            this.newsemesterdataGridView1.AllowUserToAddRows = false;
+            this.newsemesterdataGridView1.AllowUserToDeleteRows = false;
+            this.newsemesterdataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.newsemesterdataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.newsemesterdataGridView1.Location = new System.Drawing.Point(93, 48);
+            this.newsemesterdataGridView1.MultiSelect = false;
+            this.newsemesterdataGridView1.Name = "newsemesterdataGridView1";
+            this.newsemesterdataGridView1.ReadOnly = true;
+            this.newsemesterdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.newsemesterdataGridView1.Size = new System.Drawing.Size(317, 150);
+            this.newsemesterdataGridView1.TabIndex = 8;
+            // 
+            // toplabellabel7
+            // 
+            this.toplabellabel7.AutoSize = true;
+            this.toplabellabel7.Location = new System.Drawing.Point(132, 19);
+            this.toplabellabel7.Name = "toplabellabel7";
+            this.toplabellabel7.Size = new System.Drawing.Size(35, 13);
+            this.toplabellabel7.TabIndex = 3;
+            this.toplabellabel7.Text = "label6";
             // 
             // toplabel6
             // 
             this.toplabel6.AutoSize = true;
-            this.toplabel6.Location = new System.Drawing.Point(211, 20);
+            this.toplabel6.Location = new System.Drawing.Point(30, 20);
             this.toplabel6.Name = "toplabel6";
             this.toplabel6.Size = new System.Drawing.Size(35, 13);
             this.toplabel6.TabIndex = 3;
             this.toplabel6.Text = "label6";
-            // 
-            // savebutton1
-            // 
-            this.savebutton1.Location = new System.Drawing.Point(197, 228);
-            this.savebutton1.Name = "savebutton1";
-            this.savebutton1.Size = new System.Drawing.Size(75, 23);
-            this.savebutton1.TabIndex = 2;
-            this.savebutton1.Text = "Save";
-            this.savebutton1.UseVisualStyleBackColor = true;
-            this.savebutton1.Click += new System.EventHandler(this.savebutton1_Click);
             // 
             // sessiongroupBox1
             // 
             this.sessiongroupBox1.Controls.Add(this.sessionmaskedTextBox1);
             this.sessiongroupBox1.Controls.Add(this.button1);
             this.sessiongroupBox1.Controls.Add(this.fallradioButton2);
+            this.sessiongroupBox1.Controls.Add(this.session1comboBox1);
             this.sessiongroupBox1.Controls.Add(this.springradioButton1);
             this.sessiongroupBox1.Controls.Add(this.label5);
-            this.sessiongroupBox1.Location = new System.Drawing.Point(15, 157);
+            this.sessiongroupBox1.Location = new System.Drawing.Point(173, 22);
             this.sessiongroupBox1.Name = "sessiongroupBox1";
-            this.sessiongroupBox1.Size = new System.Drawing.Size(313, 355);
+            this.sessiongroupBox1.Size = new System.Drawing.Size(275, 171);
             this.sessiongroupBox1.TabIndex = 3;
             this.sessiongroupBox1.TabStop = false;
             this.sessiongroupBox1.Text = "groupBox1";
@@ -151,7 +172,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(81, 192);
+            this.button1.Location = new System.Drawing.Point(181, 134);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -169,6 +190,21 @@
             this.fallradioButton2.TabStop = true;
             this.fallradioButton2.Text = "Fall";
             this.fallradioButton2.UseVisualStyleBackColor = true;
+            // 
+            // session1comboBox1
+            // 
+            this.session1comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.session1comboBox1.FormattingEnabled = true;
+            this.session1comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.session1comboBox1.Location = new System.Drawing.Point(6, 140);
+            this.session1comboBox1.Name = "session1comboBox1";
+            this.session1comboBox1.Size = new System.Drawing.Size(160, 21);
+            this.session1comboBox1.TabIndex = 7;
+            this.session1comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // springradioButton1
             // 
@@ -207,6 +243,7 @@
             this.resultbutton2.TabIndex = 5;
             this.resultbutton2.Text = "Result";
             this.resultbutton2.UseVisualStyleBackColor = true;
+            this.resultbutton2.Click += new System.EventHandler(this.resultbutton2_Click);
             // 
             // newsemsterbutton1
             // 
@@ -218,23 +255,218 @@
             this.newsemsterbutton1.UseVisualStyleBackColor = true;
             this.newsemsterbutton1.Click += new System.EventHandler(this.newsemsterbutton1_Click);
             // 
+            // resultgroupBox1
+            // 
+            this.resultgroupBox1.Controls.Add(this.button2);
+            this.resultgroupBox1.Controls.Add(this.resultmaskedTextBox1);
+            this.resultgroupBox1.Controls.Add(this.yoursemestercomboBox2);
+            this.resultgroupBox1.Controls.Add(this.InresultsemestercomboBox1);
+            this.resultgroupBox1.Controls.Add(this.resultfallradioButton1);
+            this.resultgroupBox1.Controls.Add(this.label8);
+            this.resultgroupBox1.Controls.Add(this.resultspringradioButton2);
+            this.resultgroupBox1.Controls.Add(this.label7);
+            this.resultgroupBox1.Controls.Add(this.label6);
+            this.resultgroupBox1.Location = new System.Drawing.Point(173, 199);
+            this.resultgroupBox1.Name = "resultgroupBox1";
+            this.resultgroupBox1.Size = new System.Drawing.Size(275, 208);
+            this.resultgroupBox1.TabIndex = 7;
+            this.resultgroupBox1.TabStop = false;
+            this.resultgroupBox1.Text = "resultgroupBox1";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(71, 175);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // resultmaskedTextBox1
+            // 
+            this.resultmaskedTextBox1.Location = new System.Drawing.Point(71, 39);
+            this.resultmaskedTextBox1.Mask = "Mcs00_00";
+            this.resultmaskedTextBox1.Name = "resultmaskedTextBox1";
+            this.resultmaskedTextBox1.Size = new System.Drawing.Size(65, 20);
+            this.resultmaskedTextBox1.TabIndex = 6;
+            // 
+            // yoursemestercomboBox2
+            // 
+            this.yoursemestercomboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.yoursemestercomboBox2.FormattingEnabled = true;
+            this.yoursemestercomboBox2.Location = new System.Drawing.Point(71, 144);
+            this.yoursemestercomboBox2.Name = "yoursemestercomboBox2";
+            this.yoursemestercomboBox2.Size = new System.Drawing.Size(160, 21);
+            this.yoursemestercomboBox2.TabIndex = 7;
+            this.yoursemestercomboBox2.SelectedIndexChanged += new System.EventHandler(this.yoursemestercomboBox2_SelectedIndexChanged);
+            // 
+            // InresultsemestercomboBox1
+            // 
+            this.InresultsemestercomboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.InresultsemestercomboBox1.FormattingEnabled = true;
+            this.InresultsemestercomboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.InresultsemestercomboBox1.Location = new System.Drawing.Point(71, 75);
+            this.InresultsemestercomboBox1.Name = "InresultsemestercomboBox1";
+            this.InresultsemestercomboBox1.Size = new System.Drawing.Size(160, 21);
+            this.InresultsemestercomboBox1.TabIndex = 7;
+            this.InresultsemestercomboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // resultfallradioButton1
+            // 
+            this.resultfallradioButton1.AutoSize = true;
+            this.resultfallradioButton1.Location = new System.Drawing.Point(141, 121);
+            this.resultfallradioButton1.Name = "resultfallradioButton1";
+            this.resultfallradioButton1.Size = new System.Drawing.Size(41, 17);
+            this.resultfallradioButton1.TabIndex = 4;
+            this.resultfallradioButton1.TabStop = true;
+            this.resultfallradioButton1.Text = "Fall";
+            this.resultfallradioButton1.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 142);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Subject";
+            // 
+            // resultspringradioButton2
+            // 
+            this.resultspringradioButton2.AutoSize = true;
+            this.resultspringradioButton2.Location = new System.Drawing.Point(57, 120);
+            this.resultspringradioButton2.Name = "resultspringradioButton2";
+            this.resultspringradioButton2.Size = new System.Drawing.Size(55, 17);
+            this.resultspringradioButton2.TabIndex = 3;
+            this.resultspringradioButton2.TabStop = true;
+            this.resultspringradioButton2.Text = "Spring";
+            this.resultspringradioButton2.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 73);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Semester";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 39);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Session";
+            // 
+            // afteResultgroupBox1
+            // 
+            this.afteResultgroupBox1.Controls.Add(this.button3);
+            this.afteResultgroupBox1.Controls.Add(this.afterResultcomboBox);
+            this.afteResultgroupBox1.Controls.Add(this.afterResultChoseFilebutton);
+            this.afteResultgroupBox1.Controls.Add(this.afterResultdataGridView2);
+            this.afteResultgroupBox1.Controls.Add(this.topAfterResultlabel2);
+            this.afteResultgroupBox1.Controls.Add(this.topAfterResultlabel1);
+            this.afteResultgroupBox1.Location = new System.Drawing.Point(455, 218);
+            this.afteResultgroupBox1.Name = "afteResultgroupBox1";
+            this.afteResultgroupBox1.Size = new System.Drawing.Size(426, 205);
+            this.afteResultgroupBox1.TabIndex = 9;
+            this.afteResultgroupBox1.TabStop = false;
+            this.afteResultgroupBox1.Text = "afterResultgroupBox1";
+            this.afteResultgroupBox1.Enter += new System.EventHandler(this.afteResultgroupBox1_Enter);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(4, 152);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "button2";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // afterResultcomboBox
+            // 
+            this.afterResultcomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.afterResultcomboBox.FormattingEnabled = true;
+            this.afterResultcomboBox.Location = new System.Drawing.Point(13, 113);
+            this.afterResultcomboBox.Name = "afterResultcomboBox";
+            this.afterResultcomboBox.Size = new System.Drawing.Size(66, 21);
+            this.afterResultcomboBox.TabIndex = 7;
+            this.afterResultcomboBox.SelectedIndexChanged += new System.EventHandler(this.afterResultcomboBox_SelectedIndexChanged);
+            // 
+            // afterResultChoseFilebutton
+            // 
+            this.afterResultChoseFilebutton.Location = new System.Drawing.Point(13, 63);
+            this.afterResultChoseFilebutton.Name = "afterResultChoseFilebutton";
+            this.afterResultChoseFilebutton.Size = new System.Drawing.Size(75, 23);
+            this.afterResultChoseFilebutton.TabIndex = 7;
+            this.afterResultChoseFilebutton.Text = "Chose file";
+            this.afterResultChoseFilebutton.UseVisualStyleBackColor = true;
+            this.afterResultChoseFilebutton.Click += new System.EventHandler(this.afterResultChoseFilebutton_Click);
+            // 
+            // afterResultdataGridView2
+            // 
+            this.afterResultdataGridView2.AllowUserToAddRows = false;
+            this.afterResultdataGridView2.AllowUserToDeleteRows = false;
+            this.afterResultdataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.afterResultdataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.afterResultdataGridView2.Location = new System.Drawing.Point(94, 48);
+            this.afterResultdataGridView2.MultiSelect = false;
+            this.afterResultdataGridView2.Name = "afterResultdataGridView2";
+            this.afterResultdataGridView2.ReadOnly = true;
+            this.afterResultdataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.afterResultdataGridView2.Size = new System.Drawing.Size(322, 150);
+            this.afterResultdataGridView2.TabIndex = 8;
+            // 
+            // topAfterResultlabel2
+            // 
+            this.topAfterResultlabel2.AutoSize = true;
+            this.topAfterResultlabel2.Location = new System.Drawing.Point(119, 23);
+            this.topAfterResultlabel2.Name = "topAfterResultlabel2";
+            this.topAfterResultlabel2.Size = new System.Drawing.Size(102, 13);
+            this.topAfterResultlabel2.TabIndex = 3;
+            this.topAfterResultlabel2.Text = "topAfterResultlabel2";
+            // 
+            // topAfterResultlabel1
+            // 
+            this.topAfterResultlabel1.AutoSize = true;
+            this.topAfterResultlabel1.Location = new System.Drawing.Point(10, 23);
+            this.topAfterResultlabel1.Name = "topAfterResultlabel1";
+            this.topAfterResultlabel1.Size = new System.Drawing.Size(102, 13);
+            this.topAfterResultlabel1.TabIndex = 3;
+            this.topAfterResultlabel1.Text = "topAfterResultlabel1";
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.afteResultgroupBox1);
+            this.Controls.Add(this.resultgroupBox1);
             this.Controls.Add(this.attendencebutton3);
             this.Controls.Add(this.resultbutton2);
             this.Controls.Add(this.newsemsterbutton1);
             this.Controls.Add(this.sessiongroupBox1);
             this.Controls.Add(this.newsemestergroupBox1);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(817, 423);
+            this.Size = new System.Drawing.Size(928, 423);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.newsemestergroupBox1.ResumeLayout(false);
             this.newsemestergroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newsemesterdataGridView1)).EndInit();
             this.sessiongroupBox1.ResumeLayout(false);
             this.sessiongroupBox1.PerformLayout();
+            this.resultgroupBox1.ResumeLayout(false);
+            this.resultgroupBox1.PerformLayout();
+            this.afteResultgroupBox1.ResumeLayout(false);
+            this.afteResultgroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.afterResultdataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -243,7 +475,6 @@
 
         private System.Windows.Forms.GroupBox newsemestergroupBox1;
         private System.Windows.Forms.Label toplabel6;
-        private System.Windows.Forms.Button savebutton1;
         private System.Windows.Forms.GroupBox sessiongroupBox1;
         private System.Windows.Forms.MaskedTextBox sessionmaskedTextBox1;
         private System.Windows.Forms.Button button1;
@@ -253,10 +484,28 @@
         private System.Windows.Forms.Button attendencebutton3;
         private System.Windows.Forms.Button resultbutton2;
         private System.Windows.Forms.Button newsemsterbutton1;
-        private System.Windows.Forms.Button chosefilebutton2;
-        private System.Windows.Forms.ComboBox sheetcomboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button newsemesterchosefilebutton2;
+        private System.Windows.Forms.ComboBox newsemestersheetcomboBox1;
+        private System.Windows.Forms.DataGridView newsemesterdataGridView1;
         private System.Windows.Forms.Button insertbutton2;
+        private System.Windows.Forms.GroupBox resultgroupBox1;
+        private System.Windows.Forms.MaskedTextBox resultmaskedTextBox1;
+        private System.Windows.Forms.ComboBox yoursemestercomboBox2;
+        private System.Windows.Forms.ComboBox InresultsemestercomboBox1;
+        private System.Windows.Forms.RadioButton resultfallradioButton1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RadioButton resultspringradioButton2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox afteResultgroupBox1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox afterResultcomboBox;
+        private System.Windows.Forms.Button afterResultChoseFilebutton;
+        private System.Windows.Forms.DataGridView afterResultdataGridView2;
+        private System.Windows.Forms.Label topAfterResultlabel1;
+        private System.Windows.Forms.Label topAfterResultlabel2;
+        private System.Windows.Forms.ComboBox session1comboBox1;
+        private System.Windows.Forms.Label toplabellabel7;
     }
 }

@@ -37,8 +37,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.userControl22 = new FYP.UserControl2();
-            this.userControl11 = new FYP.UserControl1();
             this.userControl12 = new FYP.UserControl1();
             this.userControl21 = new FYP.UserControl2();
             this.panel1.SuspendLayout();
@@ -150,23 +148,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
-            // userControl22
-            // 
-            this.userControl22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.userControl22.Location = new System.Drawing.Point(224, 82);
-            this.userControl22.Name = "userControl22";
-            this.userControl22.Size = new System.Drawing.Size(803, 411);
-            this.userControl22.TabIndex = 8;
-            // 
-            // userControl11
-            // 
-            this.userControl11.Location = new System.Drawing.Point(196, 72);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(817, 423);
-            this.userControl11.TabIndex = 7;
-            // 
             // userControl12
             // 
             this.userControl12.Location = new System.Drawing.Point(196, 53);
@@ -186,18 +167,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1101, 508);
-            this.Controls.Add(this.userControl22);
-            this.Controls.Add(this.userControl11);
+            this.Controls.Add(this.userControl21);
+            this.Controls.Add(this.userControl12);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "DashboardForm";
             this.Text = "DashboardForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DashboardForm_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -213,11 +193,9 @@
         private System.Windows.Forms.Button bscsbutton2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        //private UserControl1 userControl11;
+        private UserControl1 userControl11;
         private System.Windows.Forms.Button button1;
         private UserControl1 userControl12;
         private UserControl2 userControl21;
-        private UserControl1 userControl11;
-        private UserControl2 userControl22;
     }
 }

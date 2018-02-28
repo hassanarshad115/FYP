@@ -44,8 +44,8 @@ namespace FYP
 
                             MessageBox.Show("successfully login");
                             this.Hide();
-                            //MainForm mf = new MainForm();
-                            //mf.ShowDialog();
+                            MainForm mf = new MainForm();
+                            mf.ShowDialog();
 
 
                         }

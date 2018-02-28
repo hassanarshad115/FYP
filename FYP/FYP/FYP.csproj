@@ -38,9 +38,6 @@
     <Reference Include="Excel">
       <HintPath>..\..\Excel.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\..\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="Syncfusion.Grid.Base, Version=15.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Grid.Windows, Version=15.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Shared.Base, Version=15.3460.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
@@ -72,10 +69,22 @@
     <Compile Include="DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="fall1618.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fall1618.Designer.cs">
+      <DependentUpon>fall1618.cs</DependentUpon>
+    </Compile>
     <Compile Include="FYPDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FYPDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsertStudentRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertStudentRecordForm.Designer.cs">
+      <DependentUpon>InsertStudentRecordForm.cs</DependentUpon>
     </Compile>
     <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
@@ -83,9 +92,26 @@
     <Compile Include="loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QpaClass.cs" />
+    <Compile Include="ShowStudentsRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowStudentsRecordForm.Designer.cs">
+      <DependentUpon>ShowStudentsRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="spring1618.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="spring1618.Designer.cs">
+      <DependentUpon>spring1618.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -101,8 +127,17 @@
     <EmbeddedResource Include="DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fall1618.resx">
+      <DependentUpon>fall1618.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertStudentRecordForm.resx">
+      <DependentUpon>InsertStudentRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,6 +149,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ShowStudentsRecordForm.resx">
+      <DependentUpon>ShowStudentsRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +187,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\EXITEXIT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FYPBUSINESS\FYPBUSINESS.csproj">
+      <Project>{d809208f-ab7b-44db-b1b9-63150375273e}</Project>
+      <Name>FYPBUSINESS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\FYPModel.csproj">
+      <Project>{307b101b-2534-42ff-8060-7129fb3e1e99}</Project>
+      <Name>FYPModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
