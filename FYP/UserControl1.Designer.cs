@@ -545,7 +545,7 @@
             // 
             // newSemesterAfterFirstbutton5
             // 
-            this.newSemesterAfterFirstbutton5.Location = new System.Drawing.Point(13, 167);
+            this.newSemesterAfterFirstbutton5.Location = new System.Drawing.Point(13, 166);
             this.newSemesterAfterFirstbutton5.Name = "newSemesterAfterFirstbutton5";
             this.newSemesterAfterFirstbutton5.Size = new System.Drawing.Size(68, 23);
             this.newSemesterAfterFirstbutton5.TabIndex = 10;
