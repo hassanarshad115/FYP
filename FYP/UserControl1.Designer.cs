@@ -33,7 +33,6 @@
             this.newsemestersheetcomboBox1 = new System.Windows.Forms.ComboBox();
             this.newsemesterchosefilebutton2 = new System.Windows.Forms.Button();
             this.newsemesterdataGridView1 = new System.Windows.Forms.DataGridView();
-            this.toplabellabel7 = new System.Windows.Forms.Label();
             this.toplabel6 = new System.Windows.Forms.Label();
             this.sessiongroupBox1 = new System.Windows.Forms.GroupBox();
             this.sessionmaskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
@@ -62,21 +61,33 @@
             this.afterResultdataGridView2 = new System.Windows.Forms.DataGridView();
             this.topAfterResultlabel2 = new System.Windows.Forms.Label();
             this.topAfterResultlabel1 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.gradedataGridView1 = new System.Windows.Forms.DataGridView();
+            this.RMAKERgroupBox1 = new System.Windows.Forms.GroupBox();
+            this.RMAKERmaskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.RMAKERSAVEbutton5 = new System.Windows.Forms.Button();
+            this.RMAKERFALLradioButton1 = new System.Windows.Forms.RadioButton();
+            this.RMAKERcomboBox1 = new System.Windows.Forms.ComboBox();
+            this.RMAKERSPRINGradioButton2 = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.newSemesterAfterFirstbutton5 = new System.Windows.Forms.Button();
             this.newsemestergroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.newsemesterdataGridView1)).BeginInit();
             this.sessiongroupBox1.SuspendLayout();
             this.resultgroupBox1.SuspendLayout();
             this.afteResultgroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.afterResultdataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gradedataGridView1)).BeginInit();
+            this.RMAKERgroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // newsemestergroupBox1
             // 
+            this.newsemestergroupBox1.Controls.Add(this.newSemesterAfterFirstbutton5);
             this.newsemestergroupBox1.Controls.Add(this.insertbutton2);
             this.newsemestergroupBox1.Controls.Add(this.newsemestersheetcomboBox1);
             this.newsemestergroupBox1.Controls.Add(this.newsemesterchosefilebutton2);
             this.newsemestergroupBox1.Controls.Add(this.newsemesterdataGridView1);
-            this.newsemestergroupBox1.Controls.Add(this.toplabellabel7);
             this.newsemestergroupBox1.Controls.Add(this.toplabel6);
             this.newsemestergroupBox1.Location = new System.Drawing.Point(455, 3);
             this.newsemestergroupBox1.Name = "newsemestergroupBox1";
@@ -87,7 +98,7 @@
             // 
             // insertbutton2
             // 
-            this.insertbutton2.Location = new System.Drawing.Point(13, 150);
+            this.insertbutton2.Location = new System.Drawing.Point(13, 133);
             this.insertbutton2.Name = "insertbutton2";
             this.insertbutton2.Size = new System.Drawing.Size(68, 23);
             this.insertbutton2.TabIndex = 9;
@@ -99,7 +110,7 @@
             // 
             this.newsemestersheetcomboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.newsemestersheetcomboBox1.FormattingEnabled = true;
-            this.newsemestersheetcomboBox1.Location = new System.Drawing.Point(13, 113);
+            this.newsemestersheetcomboBox1.Location = new System.Drawing.Point(13, 96);
             this.newsemestersheetcomboBox1.Name = "newsemestersheetcomboBox1";
             this.newsemestersheetcomboBox1.Size = new System.Drawing.Size(66, 21);
             this.newsemestersheetcomboBox1.TabIndex = 7;
@@ -128,15 +139,6 @@
             this.newsemesterdataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.newsemesterdataGridView1.Size = new System.Drawing.Size(317, 150);
             this.newsemesterdataGridView1.TabIndex = 8;
-            // 
-            // toplabellabel7
-            // 
-            this.toplabellabel7.AutoSize = true;
-            this.toplabellabel7.Location = new System.Drawing.Point(132, 19);
-            this.toplabellabel7.Name = "toplabellabel7";
-            this.toplabellabel7.Size = new System.Drawing.Size(35, 13);
-            this.toplabellabel7.TabIndex = 3;
-            this.toplabellabel7.Text = "label6";
             // 
             // toplabel6
             // 
@@ -299,7 +301,6 @@
             this.yoursemestercomboBox2.Name = "yoursemestercomboBox2";
             this.yoursemestercomboBox2.Size = new System.Drawing.Size(160, 21);
             this.yoursemestercomboBox2.TabIndex = 7;
-            this.yoursemestercomboBox2.SelectedIndexChanged += new System.EventHandler(this.yoursemestercomboBox2_SelectedIndexChanged);
             // 
             // InresultsemestercomboBox1
             // 
@@ -443,10 +444,122 @@
             this.topAfterResultlabel1.TabIndex = 3;
             this.topAfterResultlabel1.Text = "topAfterResultlabel1";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(54, 238);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 10;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // gradedataGridView1
+            // 
+            this.gradedataGridView1.AllowUserToAddRows = false;
+            this.gradedataGridView1.AllowUserToDeleteRows = false;
+            this.gradedataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gradedataGridView1.Location = new System.Drawing.Point(19, 271);
+            this.gradedataGridView1.Name = "gradedataGridView1";
+            this.gradedataGridView1.ReadOnly = true;
+            this.gradedataGridView1.Size = new System.Drawing.Size(126, 126);
+            this.gradedataGridView1.TabIndex = 11;
+            // 
+            // RMAKERgroupBox1
+            // 
+            this.RMAKERgroupBox1.Controls.Add(this.RMAKERmaskedTextBox1);
+            this.RMAKERgroupBox1.Controls.Add(this.RMAKERSAVEbutton5);
+            this.RMAKERgroupBox1.Controls.Add(this.RMAKERFALLradioButton1);
+            this.RMAKERgroupBox1.Controls.Add(this.RMAKERcomboBox1);
+            this.RMAKERgroupBox1.Controls.Add(this.RMAKERSPRINGradioButton2);
+            this.RMAKERgroupBox1.Controls.Add(this.label1);
+            this.RMAKERgroupBox1.Location = new System.Drawing.Point(34, 197);
+            this.RMAKERgroupBox1.Name = "RMAKERgroupBox1";
+            this.RMAKERgroupBox1.Size = new System.Drawing.Size(275, 171);
+            this.RMAKERgroupBox1.TabIndex = 12;
+            this.RMAKERgroupBox1.TabStop = false;
+            this.RMAKERgroupBox1.Text = "groupBox1";
+            // 
+            // RMAKERmaskedTextBox1
+            // 
+            this.RMAKERmaskedTextBox1.Location = new System.Drawing.Point(79, 39);
+            this.RMAKERmaskedTextBox1.Mask = "Mcs00_00";
+            this.RMAKERmaskedTextBox1.Name = "RMAKERmaskedTextBox1";
+            this.RMAKERmaskedTextBox1.Size = new System.Drawing.Size(65, 20);
+            this.RMAKERmaskedTextBox1.TabIndex = 6;
+            // 
+            // RMAKERSAVEbutton5
+            // 
+            this.RMAKERSAVEbutton5.Location = new System.Drawing.Point(181, 134);
+            this.RMAKERSAVEbutton5.Name = "RMAKERSAVEbutton5";
+            this.RMAKERSAVEbutton5.Size = new System.Drawing.Size(75, 23);
+            this.RMAKERSAVEbutton5.TabIndex = 5;
+            this.RMAKERSAVEbutton5.Text = "Next";
+            this.RMAKERSAVEbutton5.UseVisualStyleBackColor = true;
+            this.RMAKERSAVEbutton5.Click += new System.EventHandler(this.RMAKERSAVEbutton5_Click);
+            // 
+            // RMAKERFALLradioButton1
+            // 
+            this.RMAKERFALLradioButton1.AutoSize = true;
+            this.RMAKERFALLradioButton1.Location = new System.Drawing.Point(140, 104);
+            this.RMAKERFALLradioButton1.Name = "RMAKERFALLradioButton1";
+            this.RMAKERFALLradioButton1.Size = new System.Drawing.Size(41, 17);
+            this.RMAKERFALLradioButton1.TabIndex = 4;
+            this.RMAKERFALLradioButton1.TabStop = true;
+            this.RMAKERFALLradioButton1.Text = "Fall";
+            this.RMAKERFALLradioButton1.UseVisualStyleBackColor = true;
+            // 
+            // RMAKERcomboBox1
+            // 
+            this.RMAKERcomboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RMAKERcomboBox1.FormattingEnabled = true;
+            this.RMAKERcomboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.RMAKERcomboBox1.Location = new System.Drawing.Point(6, 140);
+            this.RMAKERcomboBox1.Name = "RMAKERcomboBox1";
+            this.RMAKERcomboBox1.Size = new System.Drawing.Size(160, 21);
+            this.RMAKERcomboBox1.TabIndex = 7;
+            // 
+            // RMAKERSPRINGradioButton2
+            // 
+            this.RMAKERSPRINGradioButton2.AutoSize = true;
+            this.RMAKERSPRINGradioButton2.Location = new System.Drawing.Point(56, 103);
+            this.RMAKERSPRINGradioButton2.Name = "RMAKERSPRINGradioButton2";
+            this.RMAKERSPRINGradioButton2.Size = new System.Drawing.Size(55, 17);
+            this.RMAKERSPRINGradioButton2.TabIndex = 3;
+            this.RMAKERSPRINGradioButton2.TabStop = true;
+            this.RMAKERSPRINGradioButton2.Text = "Spring";
+            this.RMAKERSPRINGradioButton2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Session";
+            // 
+            // newSemesterAfterFirstbutton5
+            // 
+            this.newSemesterAfterFirstbutton5.Location = new System.Drawing.Point(13, 167);
+            this.newSemesterAfterFirstbutton5.Name = "newSemesterAfterFirstbutton5";
+            this.newSemesterAfterFirstbutton5.Size = new System.Drawing.Size(68, 23);
+            this.newSemesterAfterFirstbutton5.TabIndex = 10;
+            this.newSemesterAfterFirstbutton5.Text = "&Save";
+            this.newSemesterAfterFirstbutton5.UseVisualStyleBackColor = true;
+            this.newSemesterAfterFirstbutton5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.RMAKERgroupBox1);
+            this.Controls.Add(this.gradedataGridView1);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.afteResultgroupBox1);
             this.Controls.Add(this.resultgroupBox1);
             this.Controls.Add(this.attendencebutton3);
@@ -467,6 +580,9 @@
             this.afteResultgroupBox1.ResumeLayout(false);
             this.afteResultgroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.afterResultdataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gradedataGridView1)).EndInit();
+            this.RMAKERgroupBox1.ResumeLayout(false);
+            this.RMAKERgroupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -506,6 +622,15 @@
         private System.Windows.Forms.Label topAfterResultlabel1;
         private System.Windows.Forms.Label topAfterResultlabel2;
         private System.Windows.Forms.ComboBox session1comboBox1;
-        private System.Windows.Forms.Label toplabellabel7;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridView gradedataGridView1;
+        private System.Windows.Forms.GroupBox RMAKERgroupBox1;
+        private System.Windows.Forms.MaskedTextBox RMAKERmaskedTextBox1;
+        private System.Windows.Forms.Button RMAKERSAVEbutton5;
+        private System.Windows.Forms.RadioButton RMAKERFALLradioButton1;
+        private System.Windows.Forms.ComboBox RMAKERcomboBox1;
+        private System.Windows.Forms.RadioButton RMAKERSPRINGradioButton2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button newSemesterAfterFirstbutton5;
     }
 }

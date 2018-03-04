@@ -8,8 +8,8 @@ namespace FYP
 {
     public class QpaClass
     {
-        private  float q = 0.0f;
-        public  float QpaMethod(float qpa)
+        private static float q = 0.0f;
+        public static  float QpaMethod(float qpa)
         {
             if (q == 85)
             {
