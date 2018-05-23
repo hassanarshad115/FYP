@@ -23,7 +23,7 @@ namespace FYP
         {
             if (IsValidated()) //ye if k sath valid ha ye khali block k lye ha k koi blok empty to ni
             {
-               try
+                try
                 {
                     bool usernamecorrect, passwordcorrect;
 
@@ -34,7 +34,7 @@ namespace FYP
                         {
                             //this.Hide();
 
-                           // rememberme k lye ye sb must ha
+                            // rememberme k lye ye sb must ha
                             if (remembermecheckBox.Checked)
                             {
                                 Properties.Settings.Default.UserName = usernametextBox.Text;
@@ -42,11 +42,12 @@ namespace FYP
                             }
 
 
-                            MessageBox.Show("successfully login");
+                            //MessageBox.Show("successfully login");
                             this.Hide();
                             //MainForm mf = new MainForm();
                             //mf.ShowDialog();
-
+                            DashboardForm df = new DashboardForm();
+                            df.Show();
 
                         }
                         else
@@ -55,7 +56,7 @@ namespace FYP
 
                             if (!usernamecorrect)
                             {
-                                MessageBox.Show("Username is Not Correct", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(usernametextBox.Text + "  Username is Not Correct", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 usernametextBox.Clear();
                                 passwordtextBox.Clear();
                                 usernametextBox.Focus();
@@ -63,7 +64,7 @@ namespace FYP
                             else
                             {
 
-                                MessageBox.Show("Password is Not Correct", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(passwordtextBox.Text + "  Password is Not Correct", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
                                 passwordtextBox.Clear();
@@ -162,6 +163,13 @@ namespace FYP
         private void Form1_Load(object sender, EventArgs e)
         {
             usernametextBox.Focus();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            ForgotPasswordForm fp = new ForgotPasswordForm();
+            fp.Show();
         }
     }
 }
